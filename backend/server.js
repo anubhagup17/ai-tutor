@@ -4,6 +4,8 @@ import fs from 'fs';
 import path from 'path';
 import { generateEmbeddingsAndStore } from './uploadHandler.js';
 
+const cors = require('cors');
+app.use(cors());
 const app = express();
 
 const storage = multer.diskStorage({
