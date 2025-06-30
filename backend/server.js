@@ -3,8 +3,8 @@ import multer from 'multer';
 import fs from 'fs';
 import path from 'path';
 import { generateEmbeddingsAndStore } from './uploadHandler.js';
+import cors from 'cors';
 
-const cors = require('cors');
 app.use(cors());
 const app = express();
 
