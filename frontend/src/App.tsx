@@ -28,7 +28,7 @@ function App() {
     setLoading(true);
     setProgress(0);
     try {
-      const res = await axios.post("http://localhost:8000/upload", formData, {
+      const res = await axios.post("https://ai-tutor-ai5n.onrender.com/upload", formData, {
         onUploadProgress: (progressEvent) => {
           if (progressEvent.total) {
             const percent = Math.round((progressEvent.loaded * 100) / progressEvent.total);
