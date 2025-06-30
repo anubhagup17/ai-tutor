@@ -5,8 +5,8 @@ import path from 'path';
 import { generateEmbeddingsAndStore } from './uploadHandler.js';
 import cors from 'cors';
 
-app.use(cors());
 const app = express();
+app.use(cors());
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
