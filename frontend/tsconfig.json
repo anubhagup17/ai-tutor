@@ -1,0 +1,11 @@
+{
+  "files": [],
+  "compilerOptions": {
+    // other options
+    "jsx": "react"
+  },
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
